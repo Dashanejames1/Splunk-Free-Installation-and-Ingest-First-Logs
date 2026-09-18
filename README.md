@@ -66,7 +66,10 @@ After downloading Splunk, I ran sudo dpkg -i to install it and sudo /opt/splunk/
 <img width="650" height="293" alt="Screenshot 2026-09-17 154617" src="https://github.com/user-attachments/assets/2972b744-7343-4102-8989-e835ae6b89f3" />
 
 
-<img width="650" height="293" alt="Screenshot 2026-09-17 154617" src="https://github.com/user-attachments/assets/e477e6be-d18e-4da0-a652-53122566f8b2" />
+<img width="650" height="293" alt="Screenshot 2026-09-17 154617" src="https://github.com/user-attachments/assets/e477e6be-d18e-4da0-a652-53122566f8b2" 
+
+<img width="805" height="338" alt="Screenshot 2026-09-17 154915" src="https://github.com/user-attachments/assets/0b22ec2a-403b-454a-a1eb-96a292fb446b" />
+
 
 Output explained:
 
@@ -76,7 +79,7 @@ For this task I clicked on the add data tab located on the Splunk Enterprise hom
 
 <img width="853" height="322" alt="Screenshot 2026-09-17 155300" src="https://github.com/user-attachments/assets/991c14a3-cee1-403e-8158-4f5f304f38fd" />
 
-Output explained: I ran a basic search of index=main, which means "show me everything you have stored". Since this was the only file stored in the folder, it showed the same output as when this specific file was searched for in the first screenshot. 
+Output explained: I ran a basic search of index=main, which means "show me everything you have stored". Since this was the only file stored in the folder, it showed the same output as when this specific file "nmap_services.txt" was searched for in the previous task. 
 
   5. [Create a simple dashboard showing event counts.]
 

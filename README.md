@@ -47,28 +47,36 @@ attack.mitre.org
 
 Output explained:
 
-I copied the wget link for the .deb Linux version of Splunk Enterprise Free on the Splunk website. I pasted it into the command prompt and executed it which then installed on my Linux device. Once, it installed it established a localhost connection to access Splunk in the web browser.
-
+I copied the wget link for the .deb Linux version of Splunk Enterprise Free on the Splunk website. I pasted it into the command prompt and executed it which then downloaded on my Linux device. 
 2. [Access Splunk at http://localhost:8000]
+
+<img width="325" height="253" alt="Screenshot 2026-09-17 222727" src="https://github.com/user-attachments/assets/44a0f2ea-7d60-4087-b040-d5f9437ef2fd" />
+
+<img width="329" height="257" alt="Screenshot 2026-09-17 222555" src="https://github.com/user-attachments/assets/80443ee6-dbee-4d9e-9ae3-014e6c586a0b" />
 
 <img width="851" height="373" alt="Screenshot 2026-09-17 150533" src="https://github.com/user-attachments/assets/6e8ca33a-757f-4bd2-8bc4-a1d97c03ad4d" />
 
 
 Output explained:
 
+After downloading Splunk, I ran sudo dpkg -i to install it and sudo /opt/splunk/bin/splunk start --accept-license --run-as-root to launch it, which established a local host connection accessible in the web browser at http://127.0.0.1:8000. The webpage is then successfully accessed in the last screen shot.
+
 3. [Settings > Data Inputs > Upload your NMAP output files from previous tasks.]
+
+<img width="650" height="293" alt="Screenshot 2026-09-17 154617" src="https://github.com/user-attachments/assets/2972b744-7343-4102-8989-e835ae6b89f3" />
+
 
 <img width="650" height="293" alt="Screenshot 2026-09-17 154617" src="https://github.com/user-attachments/assets/e477e6be-d18e-4da0-a652-53122566f8b2" />
 
 Output explained:
 
+For this task I clicked on the add data tab located on the Splunk Enterprise homepage and uploaded the targeted Nmap file that I saved to a file back in my previous task in the first repository, "nmap_services.txt". Next, Splunk then ran a search to verify the data was ingested correctly. The search returned two events from this nmap_services.txt file. The first event shows the scan summary (1 IP address scanned, host is up), and the second shows the full scan initiation including the exact command used, the target IP, and the open ports with their services and versions. This confirms Splunk successfully parsed and indexed the Nmap output file, making the scan data searchable within the SIEM. 
 
 4. [Run a basic search: index=main]
 
 <img width="853" height="322" alt="Screenshot 2026-09-17 155300" src="https://github.com/user-attachments/assets/991c14a3-cee1-403e-8158-4f5f304f38fd" />
 
-Output explained:
-
+Output explained: I ran a basic search of index=main, which means "show me everything you have stored". Since this was the only file stored in the folder, it showed the same output as when this specific file was searched for in the first screenshot. 
 
   5. [Create a simple dashboard showing event counts.]
 

@@ -85,9 +85,7 @@ Output explained: I ran a basic search of index=main, which means "show me every
 
 <img width="854" height="336" alt="Screenshot 2026-09-17 155416" src="https://github.com/user-attachments/assets/87e5a452-65ff-4859-b395-7af330bd7e90" />
 
-Output explained:
-
-
+Output explained: I ran the search 'index=main | stats count by source' to count the number of events per data source, then clicked the visualization tab to display the results as a  column chart. This visualization confirms the data was successfully ingested and gives a quick visual summary of events by source, which is a core function of a SIEM dashboard in a real SOC environment where analysts use similar views to monitor log volume across multiple data sources at a glance.  
 
 
 

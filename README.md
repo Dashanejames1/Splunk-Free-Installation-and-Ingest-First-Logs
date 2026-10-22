@@ -2,15 +2,15 @@
 
 
 **Author:** Dashane James  
-**Lab Environment:** [e.g. VMware Workstation | Kali Linux | Metasploit | Metasploitable 2]  
+**Lab Environment:** VMware Workstation | Kali Linux | Metasploit | Metasploitable 2 
 **Purpose:** 
-**Status:** 🟢 Active / 🟡 In Progress / 🔵 Completed
+**Status:** 🔵 Completed
 
 ---
 
 ## 📋 Overview
 
-[Installed Splunk Free and ingest previous lab scan output files for analysis.]
+Installed Splunk Free and ingest previous lab scan output files for analysis.
 
 ---
 
@@ -31,8 +31,8 @@
 
 attack.mitre.org 
 
-- **[Metasploit]** — a penetration testing framework that packages known exploits into ready-to-run modules, so you can point one at a vulnerable service and attempt exploitation instead of writing exploit code from scratch.
-- **[Metasploitable]** — Acts as a target machine with many intentional vulnerabilities to practice penetration testing, ethical hacking, and securely auditing safely.
+- **Metasploit** — a penetration testing framework that packages known exploits into ready-to-run modules, so you can point one at a vulnerable service and attempt exploitation instead of writing exploit code from scratch.
+- **Metasploitable** — Acts as a target machine with many intentional vulnerabilities to practice penetration testing, ethical hacking, and securely auditing safely.
 
 
 ---
@@ -48,7 +48,8 @@ attack.mitre.org
 Output explained:
 
 I copied the wget link for the .deb Linux version of Splunk Enterprise Free on the Splunk website. I pasted it into the command prompt and executed it which then downloaded on my Linux device. 
-2. [Access Splunk at http://localhost:8000]
+
+2. Access Splunk at http://localhost:8000
 
 <img width="325" height="253" alt="Screenshot 2026-09-17 222727" src="https://github.com/user-attachments/assets/44a0f2ea-7d60-4087-b040-d5f9437ef2fd" />
 
@@ -61,7 +62,7 @@ Output explained:
 
 After downloading Splunk, I ran sudo dpkg -i to install it and sudo /opt/splunk/bin/splunk start --accept-license --run-as-root to launch it, which established a local host connection accessible in the web browser at http://127.0.0.1:8000. The webpage is then successfully accessed in the last screen shot.
 
-3. [Settings > Data Inputs > Upload your NMAP output files from previous tasks.]
+3. Settings > Data Inputs > Upload your NMAP output files from previous tasks.
 
 <img width="650" height="293" alt="Screenshot 2026-09-17 154617" src="https://github.com/user-attachments/assets/2972b744-7343-4102-8989-e835ae6b89f3" />
 
@@ -75,13 +76,13 @@ Output explained:
 
 For this task I clicked on the add data tab located on the Splunk Enterprise homepage and uploaded the targeted Nmap file that I saved to a file back in my previous task in the first repository, "nmap_services.txt". Next, Splunk then ran a search to verify the data was ingested correctly. The search returned two events from this nmap_services.txt file. The first event shows the scan summary (1 IP address scanned, host is up), and the second shows the full scan initiation including the exact command used, the target IP, and the open ports with their services and versions. This confirms Splunk successfully parsed and indexed the Nmap output file, making the scan data searchable within the SIEM. 
 
-4. [Run a basic search: index=main]
+4. Run a basic search: index=main
 
 <img width="853" height="322" alt="Screenshot 2026-09-17 155300" src="https://github.com/user-attachments/assets/991c14a3-cee1-403e-8158-4f5f304f38fd" />
 
 Output explained: I ran a basic search of index=main, which means "show me everything you have stored". Since this was the only file stored in the folder, it showed the same output as when this specific file "nmap_services.txt" was searched for in the previous task. 
 
-  5. [Create a simple dashboard showing event counts.]
+  5. Create a simple dashboard showing event counts.
 
 <img width="854" height="336" alt="Screenshot 2026-09-17 155416" src="https://github.com/user-attachments/assets/87e5a452-65ff-4859-b395-7af330bd7e90" />
 
@@ -114,14 +115,8 @@ Based on findings, the following remediations would be recommended in a real env
 [Finding 3] — [Recommendation]
 [Finding 4] — [Recommendation]
 [Finding 5] — [Recommendation]
-📚 CySA+ Exam Relevance
-This lab directly maps to the following CompTIA CySA+ (CS0-003) exam domains:
 
-Domain	Coverage
-Security Operations (33%)	[What this lab covers in this domain]
-Vulnerability Management (30%)	[What this lab covers in this domain]
-Incident Response (20%)	[What this lab covers in this domain]
-Reporting & Communication (17%)	[What this lab covers in this domain]
+
 🔑 Technical Notes
 [Any important notes about your lab setup, workarounds, or lessons learned. Example:
 
@@ -140,14 +135,7 @@ STEP 5: Verify
 [command here]
 shell 
 
-📌 About This Project
-[1-2 sentences about how this fits into your overall portfolio and career goals.]
 
-Related repositories:
-
-[Repo Name] — [Brief description]
-[Repo Name] — [Brief description]
-[Repo Name] — Coming soon
 👤 Author
 Dashane James
 Senior Field Service Technician → Cybersecurity Analyst

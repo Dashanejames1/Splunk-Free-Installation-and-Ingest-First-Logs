@@ -31,6 +31,10 @@ Installed Splunk Free and ingest previous lab scan output files for analysis.
 
 attack.mitre.org 
 
+Nmap
+
+Splunk
+
 - **Metasploit** — a penetration testing framework that packages known exploits into ready-to-run modules, so you can point one at a vulnerable service and attempt exploitation instead of writing exploit code from scratch.
 - **Metasploitable** — Acts as a target machine with many intentional vulnerabilities to practice penetration testing, ethical hacking, and securely auditing safely.
 
@@ -92,6 +96,7 @@ Output explained: I ran the search 'index=main | stats count by source' to count
 
 📊 Key Findings Summary
 Port/Service	Tool Used	Risk Level	Notes
+
 [e.g. 21/tcp FTP]	[e.g. Nmap]	🔴 Critical	[Notes]
 [e.g. 23/tcp Telnet]	[e.g. Wireshark]	🔴 Critical	[Notes]
 [e.g. 80/tcp HTTP]	[e.g. Nikto]	🟠 High	[Notes]
